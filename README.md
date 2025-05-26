@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Cognitive Crafts Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This repository contains the codebase for the Cognitive Crafts website, a modern, responsive web application built using React and Tailwind CSS. The website serves as a digital presence for Cognitive Crafts, showcasing their expertise in AI and Java development, their services, products, leadership, and industry insights.
 
-In the project directory, you can run:
+The project follows a component-based architecture, making it modular and easy to maintain. It features smooth scrolling between sections, dark mode support, and responsive design for various devices.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React:** Frontend JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for rapid styling.
+- **Framer Motion:** A React library for production-ready animations.
+- **React Router DOM:** For handling navigation (though primarily used for single-page smooth scrolling).
+- **React Helmet Async:** For managing document head tags, including the favicon.
+- **Lucide React:** A library of open-source icons.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm (or yarn) installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd cognitive-crafts-website
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### `npm run eject`
+### Available Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In the project directory, you can run the standard Create React App scripts:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` or `yarn start`: Runs the app in development mode.
+- `npm test` or `yarn test`: Launches the test runner.
+- `npm run build` or `yarn build`: Builds the app for production.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Website Sections and Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The Cognitive Crafts website is structured into several key sections, accessible via the header navigation:
 
-## Learn More
+### Header
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A sticky navigation bar at the top of the page. Features include:
+- Company logo (using `icon.png` from `src/assets/images`)
+- Company name "Cognitive Crafts" with a dynamic blue to purple gradient.
+- Navigation links with smooth scrolling to respective sections.
+- Active link highlighting in blue based on the clicked section.
+- Theme toggle button (Light/Dark mode).
+- Responsive mobile menu.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Overview Section
 
-### Code Splitting
+The introductory section providing a brief overview of Cognitive Crafts. Features:
+- Large, gradient-colored heading: "Welcome to Cognitive Crafts".
+- Sub-text introducing the company.
+- Three key feature points (AI-Powered Solutions, Custom Development, Expert Consultation).
+- Animations using Framer Motion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Approach Section
 
-### Analyzing the Bundle Size
+Positioned between the Overview and Products sections, this section outlines the company's approach with key points.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Products Section
 
-### Making a Progressive Web App
+Showcases the company's flagship products and upcoming projects. Features:
+- Details for "DrishyaScan" and "TestAura".
+- A list of "Upcoming Projects".
+- Animations using Framer Motion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### About Section
 
-### Advanced Configuration
+Provides detailed information about the company. Features:
+- An "Our Story" timeline with key events.
+- A "Why AI + Java?" section detailing advantages with titles and descriptions.
+- Animations using Framer Motion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Service Section
 
-### Deployment
+Lists the various services offered by Cognitive Crafts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Technology Section
 
-### `npm run build` fails to minify
+Details the technologies the company works with, categorized for clarity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Leadership Section
+
+Introduces the leadership team (currently featuring Yash Desai). Features:
+- Profile picture (using `profileimage.png` from `src/assets/images`).
+- Name, title, and specialization.
+- Social media links (LinkedIn, GitHub).
+- Detailed sections on about, technical expertise, and key projects.
+- Animations using Framer Motion.
+
+### Insights Section
+
+Provides industry statistics and trends related to AI and Java development. Features:
+- A grid of insight cards with icons, categories, titles, and descriptions.
+- Data covering market growth, technology dominance, integration trends, developer demand, performance, and innovation.
+- Animations using Framer Motion.
+
+### Contact Section
+
+Allows users to get in touch with Cognitive Crafts. Features:
+- "Get In Touch" heading and descriptive text.
+- Contact information (Email, Phone, Address - placeholders initially, updated with provided details).
+- A contact form with fields for Name, Email, and Message.
+- Animations using Framer Motion.
+
+### Footer
+
+A simple footer at the bottom of the page. Features:
+- Copyright notice with the current year.
+- (Optional) Placeholder for social links.
+- Animations using Framer Motion.
+
+## Contributing
+
+Instructions for contributing to the project.
+
+## License
+
+Information about the project's license.
