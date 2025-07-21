@@ -6,7 +6,7 @@ import { useTheme } from './context/ThemeContext';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
-import iconImage from '../../assets/images/icon.png';
+import iconImage from '../../assets/images/logo05.png';
 
 const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -33,8 +33,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
         {/* Logo & Title */}
         <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
-          <img src={iconImage} alt="Cognitive Crafts" className="w-16 h-16 object-contain" />
-          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Cognitive Crafts</span>
+          <img src={iconImage} alt="Cognitive Crafts" className="w-20 h-20 object-contain" />
+          <span className="bg-gradient-to-r from-[#ff0000] via-[#ff7f00] to-[#ffff00] bg-clip-text text-transparent">Cognitive Crafts</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -75,6 +75,15 @@ const Header = () => {
           </button>
         </div>
       </div>
+      {/* Rainbow Gradient Underline with Fade and Glow */}
+      <div
+        style={{
+          height: '5px',
+          width: '100%',
+          background: `linear-gradient(90deg, transparent 0%, #ff0000 10%, #ff7f00 23%, #ffff00 36%, #00ff00 50%, #0000ff 64%, #4b0082 77%, #9400d3 90%, transparent 100%)`,
+          boxShadow: '0 0 16px 4px rgba(255,0,90,0.18), 0 0 32px 8px rgba(0,153,255,0.10)'
+        }}
+      />
 
       {/* Mobile Menu */}
       {menuOpen && (

@@ -4,32 +4,28 @@ export const NAV_ITEMS = [
     path: '#overview',
   },
   {
-    title: 'Products',
-    path: '#products',
-  },
-  {
     title: 'About',
     path: '#about',
   },
   {
-    title: 'Service',
-    path: '#service',
+    title: 'Process',
+    path: '#process',
   },
   {
-    title: 'Technology',
-    path: '#technology',
+    title: 'Courses',
+    path: '#courses',
   },
+  // {
+  //   title: 'Leadership',
+  //   path: '#leadership',
+  // },
+  // {
+  //   title: 'Insights',
+  //   path: '#insights',
+  // },
   {
-    title: 'Leadership',
-    path: '#leadership',
-  },
-  {
-    title: 'Insights',
-    path: '#insights',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
+    title: 'Join Us',
+    path: '#joinus',
   },
 ];
 
